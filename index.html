@@ -244,7 +244,7 @@ footer .copy{font-size:12px;opacity:.5}
         <img class="about-photo" loading="lazy" src="images/profile.png" alt="Arthur Dimsdale">
         <p>Arthur Dimsdale is a graphic designer in London, who loves surfing, doughnuts and trying to mix experimental cocktails.</p>
         <p>He is currently busy designing and is open to branding roles.</p>
-        <a href="mailto:hello@arthur.studio" class="btn">Email</a>
+        <a href="#contact" class="btn">Get in Touch</a>
       </div>
     </div>
   </div>
@@ -351,8 +351,8 @@ footer .copy{font-size:12px;opacity:.5}
 <footer id="contact">
   <h2>Get in touch</h2>
   <p>Let's talk about your next branding project!</p>
-  <p>Drop an email to <a href="mailto:hello@arthur.studio" class="email-link">hello@arthur.studio</a></p>
-  <form class="contact-form" id="contactForm" action="https://formspree.io/f/placeholder" method="POST">
+  <p>Fill out the form below and I'll get back to you!</p>
+  <form class="contact-form" id="contactForm" action="https://formspree.io/f/agdimsdale@gmail.com" method="POST">
     <input type="text" name="name" placeholder="Your name" required>
     <input type="email" name="email" placeholder="Your email" required>
     <textarea name="message" placeholder="What's the project about?" required></textarea>
@@ -365,7 +365,7 @@ footer .copy{font-size:12px;opacity:.5}
     <a href="https://linkedin.com/in/arthurdimsdale" target="_blank" rel="noopener"><img loading="lazy" src="images/icon-linkedin.png" alt="LinkedIn"></a>
   </div>
   <p class="copy">©2025 Arthur Dimsdale / arthurstudio.com</p>
-  <p class="copy" style="margin-top:.5em;opacity:.6;font-size:.85em;">Designs are 100% human, website is built on Claude Code</p>
+  <p class="copy" style="margin-top:.5em;opacity:.6;font-size:.85em;">Designs are 100% human, website is built on OpenClaw & Claude Code</p>
 </footer>
 
 <script>
@@ -449,7 +449,7 @@ const vh = window.innerHeight;
 let ticking = false;
 function onScroll() {
   const s = window.scrollY;
-  if (s < vh * 2) heroBg.style.transform = `translateY(${s * 0.1}px)`;
+  if (s < vh * 2) heroBg.style.transform = `translateY(${s * 0.25}px)`;
   const progress = Math.min(Math.max((s - vh * 0.2) / (vh * 0.8), 0), 1);
   heroFixed.style.filter = `blur(${progress * 4}px) brightness(${1 - progress * 0.3})`;
   if (progress > 0.7) aboutInner.classList.add('visible');
