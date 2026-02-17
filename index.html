@@ -352,7 +352,10 @@ footer .copy{font-size:12px;opacity:.5}
   <h2>Get in touch</h2>
   <p>Let's talk about your next branding project!</p>
   <p>Fill out the form below and I'll get back to you!</p>
-  <form class="contact-form" id="contactForm" action="https://formspree.io/f/agdimsdale@gmail.com" method="POST">
+  <form class="contact-form" id="contactForm" action="https://formsubmit.co/agdimsdale@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New message from arthurstudio.com">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://arthurdimsdalestudio.com">
     <input type="text" name="name" placeholder="Your name" required>
     <input type="email" name="email" placeholder="Your email" required>
     <textarea name="message" placeholder="What's the project about?" required></textarea>
